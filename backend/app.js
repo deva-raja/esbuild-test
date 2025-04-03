@@ -10,7 +10,7 @@ app.use(cors());
 app.get('/', async (req, res) => {
    try {
       const result = await esbuild.build({
-         entryPoints: ['index.jsx'],
+         entryPoints: ['login-page.tsx'],
          bundle: true,
          write: false,
          format: 'esm',
